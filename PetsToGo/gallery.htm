@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tori Kelly" />
+    <meta name="description" content="Pets to Go Animal Shelter Site" />
+    <meta name="keywords" content="animal, animals, dog, dogs, cat, cats, shelter, adopt, puppy, puppies, kitten, kittens, shelter, pet, pets, to, go" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cuprum|Marmelad|Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+
+
+        @media only screen and (max-width:8000px) {
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .grid-container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 100%;
+                margin: 5%;
+            }
+
+            #container {
+                opacity: 1;
+                width: 40%;
+            }
+        }
+
+            @media only screen and (max-width:800px) {
+
+                #container {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 1% auto;
+                }
+
+                h1 {
+                    font-size: 200%;
+                }
+
+                h2 {
+                    font-size: 160%;
+                }
+
+                #rescue {
+                    visibility: hidden;
+                    display: none;
+                }
+
+                html {
+                    height: 80%;
+                }
+                 
+                img {
+                    margin: 0 auto;
+                }
+                .grid-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    width: 100%;
+                    margin: 1%;
+                }
+
+            }
+
+    </style>
+    <title>Pets To Go</title>
+</head>
+
+<body>
+
+    <div id="rescue">
+        <h4>Meet the newest rescue!</h4>
+        <p>Bordie-Collie - 4 Months</p>
+        <img src="images/colliepup.jpg" style='height: 100%; width: 100%; object-fit: contain' alt="collie" />
+        <a href="contact-adopt.htm">Want to bring him home?</a>
+    </div>
+
+    <div id="container">
+
+        <header name="top">
+            <h1>Pets To Go</h1>
+            <h2>Animal Shelter</h2>
+        </header>
+
+        <nav>
+            <a href="index.htm">Home</a>
+            <a href="about.htm">About PTG</a>
+            <a href="pets.htm">Our Pets</a>
+            <a href="gallery.htm">Gallery</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Contact Us!
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="contact-visit.htm">Schedule a Visit</a>
+                    <a href="contact-adopt.htm">Adoption Form</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="grid-container">
+                <img src="images/gallery/animal1.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal2.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal3.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal4.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal5.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal6.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal7.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal8.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal9.jpg" width="260" height="260" alt="animal" />
+                <img src="images/gallery/animal10.jpg" width="260" height="260" alt="animal" />
+            </div>
+        </main>
+
+        <footer>
+            <img class="logo" src="images/logo.png" width="50" height="50" alt="paw print"/>
+            <p class="copyright">&copy;Copyright 2019<br /> All rights reserved.<br /><a href="index.htm" target="_blank">Pets To Go</a></p>
+            <a class="top" href="#top">Go to Top</a>
+        </footer>
+
+    </div>
+</body>
+</html>

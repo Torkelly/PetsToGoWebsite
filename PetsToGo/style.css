@@ -1,0 +1,231 @@
+﻿html {
+    background: url("images/background3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header {
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    border: 2px solid lightgray;
+    padding: 1%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main {
+    padding: 2%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#rescue {
+    width: 20%;
+    float: left;
+    margin: 10% 5% auto;
+    padding: 2%;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    background-color: lightyellow;
+    opacity: .90;
+    text-align: center;
+    position: relative;
+}
+#container {
+    width: 40%;
+    border: 2px solid lightgray;
+    margin: 2% auto;
+    border-radius: 15px;
+    background-color: lightgoldenrodyellow;
+    opacity: .80;
+    overflow: hidden;
+    float: left;
+}
+nav {
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+h1 {
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-size: 275%;
+    font-weight: 900;
+}
+
+h2 {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 175%;
+}
+
+h3 {
+    font-family: 'Marmelad', sans-serif;
+    text-align: center;
+    font-size: 145%;
+    margin: 0%;
+    padding: 1%;
+}
+
+h4 {
+    font-family: 'Marmelad', sans-serif;
+    text-indent: 0;
+    font-size: 125%;
+    justify-content:center;
+    margin-bottom: 3%;
+    margin: 1%
+}
+
+
+p {
+    font-family: 'Cuprum', sans-serif;
+    text-indent: 5%;
+    font-size: 115%;
+    margin: 1%;
+}
+.hours {
+    font-family: 'Cuprum', sans-serif;
+    grid-row: 1/2;
+}
+.hours h4 {
+    padding-left: 20%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#index-flex {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 70px;
+    padding-left: 3%;
+}
+.events p {
+    grid-row : 2 / 2;
+    text-indent: 0;
+    margin: 1.5%;
+    padding-left: 1%;
+}
+
+img {
+    margin: 1%;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+
+img.logo {
+    border: none;
+}
+
+.copyright {
+    margin: 2%;
+    font-size: 70%;
+    text-indent: 0;
+}
+
+footer {
+    background-color: cornflowerblue;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    color: blue;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 1% 2%;
+    float: left; 
+ }
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    max-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10%;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 10%;
+    font-size: 84%;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: green;
+    font-weight: 900;
+}
+
+nav a {
+    margin: 2% 4%;
+    border-radius: 0px 0px 15px 15px;
+    text-decoration: none;
+    float: left;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.top {
+    float: right;
+    text-align: right;
+    margin-top: 5%;
+    margin-left: 65%;
+    font-size: 70%;
+    overflow: hidden;
+}
+
+#rescue a {
+    font-family: 'Cuprum', sans-serif;
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: green;
+}

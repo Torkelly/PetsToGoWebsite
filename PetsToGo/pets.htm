@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tori Kelly" />
+    <meta name="description" content="Pets to Go Animal Shelter Site" />
+    <meta name="keywords" content="animal, animals, dog, dogs, cat, cats, shelter, adopt, puppy, puppies, kitten, kittens, shelter, pet, pets, to, go" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cuprum|Marmelad|Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+
+        @media only screen and (max-width:8000px) {
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            #pets-flex {
+                display: flex;
+                margin-top: 5%;
+                padding-left: 3%;
+                flex-flow: row wrap;
+                align-items: stretch;
+                justify-content: center;
+            }
+
+            figure {
+                background-color: lightskyblue;
+                border: 2px solid cornflowerblue;
+                width: 40%;
+                flex-grow: 1;
+                box-shadow: 5px 5px 3px #888888;
+                border-radius: 15px;
+                overflow: hidden;
+                padding: 1%;
+                margin: 1%;
+            }
+
+            figcaption {
+                background-color: lightgoldenrodyellow;
+                font-style: italic;
+                margin: 0% 1% 1% 0%;
+                font-size: 12px;
+                text-align: center;
+                padding: 1%;
+                font-weight: 600;
+            }
+
+            figure img {
+                border: none;
+                vertical-align: middle;
+                text-align: center;
+                position: relative;
+                margin: 1%;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            .middle {
+                text-align: center;
+                position: relative;
+            }
+
+
+
+            figure p {
+                font-size: 110%;
+                font-weight: 600;
+                text-indent: 0%;
+            }
+
+            h3 {
+                margin: 0%;
+                padding: 1%;
+            }
+
+            h4 {
+                text-align: center;
+                margin: 1%;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+            #container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 200%;
+            }
+
+            h2 {
+                font-size: 160%;
+            }
+
+            #pets-flex {
+                display: flex;
+                margin-top: 5%;
+                padding-left: 3%;
+                flex-direction: column;
+                align-items: stretch;
+                width: 90%;
+            }
+
+            figure {
+                width: 80%;
+                margin: 1% auto;
+                padding: 1% auto;
+            }
+
+            #rescue {
+                visibility: hidden;
+                display: none;
+            }
+
+            html {
+                height: 80%;
+            }
+        }
+
+    </style>
+    <title>Pets To Go</title>
+</head>
+
+<body>
+
+    <div id="rescue">
+        <h4>Meet the newest rescue!</h4>
+        <p>Bordie-Collie - 4 Months</p>
+        <img src="images/colliepup.jpg" style='height: 100%; width: 100%; object-fit: contain' alt="collie"/>
+        <a href="contact-adopt.htm">Want to bring him home?</a>
+    </div>
+
+    <div id="container">
+
+        <header name="top">
+            <h1>Pets To Go</h1>
+            <h2>Animal Shelter</h2>
+        </header>
+
+        <nav>
+            <a href="index.htm">Home</a>
+            <a href="about.htm">About PTG</a>
+            <a href="pets.htm">Our Pets</a>
+            <a href="gallery.htm">Gallery</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Contact Us!
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="contact-visit.htm">Schedule a Visit</a>
+                    <a href="contact-adopt.htm">Adoption Form</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <h3>Featured Pets</h3>
+
+            <div id="pets-flex">
+                <figure>
+                    <h4>ASTRO</h4>
+                    <img src="images/astro.jpg" alt="Stripped Rose" width="180" height="120" alt="astro">
+                    <figcaption>2 years old, neutered male, <br />domestic shorthair, 11 lbs.</figcaption>
+                    <p>
+                        Astro can thank his lucky stars, because after a car hit him, he made it out of the vet hospital in Springfield and found a temporary home with us. Astro’s a little nervous, but once he settles down, he loves people to pet him. He’s lean and lanky, and even though we think he’s fit to run a kitty marathon, he weighs almost 12 pounds!
+                        Astro is a sweetheart, but he’s very scared right now. Come meet with him and see what a great guy he can be. Maybe you can give him his forever home!
+                        For information about Astro, call Jessica at Pets to Go: (555) 555-5555.
+                    </p>
+                </figure>
+
+                <figure>
+                    <h4>SNOWBALL & SALLY</h4>
+                    <img src="images/snowballsally2.jpg" alt="Stripped Rose" width="180" alt="snowball&sally">
+                    <figcaption>6 months old, spayed female, <br /> domestic shorthairs, 4 lbs and 5 lbs.</figcaption>
+                    <p>
+                        If you’re looking to bring some love and joy into your home, look no further than these two girls. They’re 6-month-old rescues—amazingly sweet and loving. They’re affectionate (big-time purrers and cuddlers), playful, and endlessly entertaining. They are also healthy, have had their shots, have been spayed, and are litterbox trained. Because they’ve bonded to each other, we’d like to keep them together.
+                    </p>
+                </figure>
+
+                <figure>
+                    <h4>CINDY</h4>
+                    <img class="middle"src="images/cindy.jpg" alt="Stripped Rose" width="180" alt="cindy">
+                    <figcaption>3 years old, spayed female, <br />Shepherd mix, 40 lbs.</figcaption>
+                    <p>
+                        Cindy came to us because her family was splitting up. She’s never gotten the attention a young dog needs.
+                        Cindy is super playful. She loves toys, and her favorite game is fetch. She’s a smart cookie and adapts well to positive training. She already knows  all the basic tricks, and learning more fun tricks like “roll over.” Cindy is house-trained, rides well in the car, and enjoys being brushed and groomed. She behaves well around the house and respects her boundaries.
+                        Cindy needs someone who’ll give her very clear rules, lots of love, and plenty of exercise. In return, she’ll be your loyal friend for life.
+                    </p>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <img class="logo" src="images/logo.png" width="50" height="50" />
+            <p class="copyright">&copy;Copyright 2019<br /> All rights reserved.<br /><a href="index.htm" target="_blank">Pets To Go</a></p>
+            <a class="top" href="#top">Go to Top</a>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tori Kelly" />
+    <meta name="description" content="Pets to Go Animal Shelter Site" />
+    <meta name="keywords" content="animal, animals, dog, dogs, cat, cats, shelter, adopt, puppy, puppies, kitten, kittens, shelter, pet, pets, to, go" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cuprum|Marmelad|Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 125%;
+            background-color: none;
+            color: black;
+            font-weight:600;
+        }
+
+        #formcontainer {
+            background-color: lightgray;
+            width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: lightskyblue;
+            opacity: 0.8;
+        }
+
+        legend {
+            border-bottom: 1px dotted purple;
+            font-size: 150%;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        fieldset {
+            border: hidden;
+            margin: 20px;
+        }
+
+        fieldset div {
+                margin: 5px 0;
+        }
+
+        input, select, textarea {
+            font-size: .9em;
+            padding: .1% .1% .1%;
+            margin: 1% 0% 0% 3%;
+        }
+
+        input[type="checkbox"] {
+            padding-left: 25px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            color: black;
+            padding: 2%;
+            font-size: 120%;
+        }
+
+        p {
+            margin: 4% 0% 0% 0%;
+        }
+
+        input {
+            margin: 1% 0% 0% 5%;
+        }
+
+        label {
+            margin: 1% 0% 0% 3%;
+        }
+
+        #indent {
+            padding-left: 10%;
+        }
+        #date {
+            padding-right: 5%;
+        }
+
+        #labelmargin {
+            margin-left: 10%;
+        }
+    </style>
+    <title>Pets to Go</title>
+</head>
+
+<body>
+    <div id="formcontainer">
+        <form id="visitform" method="post" action="contact_form_response.php">
+            <legend><h1>Schedule a visit to our shelter!</h1></legend>
+            <h3>Fill out the information below to get started.</h3>
+            <fieldset>
+                <div>
+                    <label id="labelmargin" class="formrow" for="firstname">First Name: </label>
+                    <input id="firstname" name="firstname" type="text">
+                </div>
+
+                <div>
+                    <label id="labelmargin" class="formrow" for="lastname">Last Name: </label>
+                    <input id="lastname" name="lastname" type="text">
+                </div>
+
+                <p>What are you visiting for?</p>
+
+                <div>
+                    <input id="adoption" name="adoption" type="radio">
+                    <label>Adoption</label>
+                </div>
+
+                <div>
+                    <input id="spay/nueter" name="spay/nueter" type="radio">
+                    <label>Spay / Nueter</label>
+                </div>
+
+                <div>
+                    <input id="volunteer" name="volunteer" type="radio">
+                    <label>Volunteering</label>
+                </div>
+
+                <div>
+                    <input id="dropoff" name="dropoff" type="radio">
+                    <label>I need to give up a pet</label>
+                </div>
+                <p>Schedule a date & time:</p>
+                <div>
+                    <label id="indent" for="date">date:</label>
+                    <input id="date" type="date" value="2019-05-01">
+
+                    <label for="time">Pick a time:</label>
+                    <select id="time" name="experience">
+                        <option value="any">8:30 am</option>
+                        <option value="binya">10:00 am</option>
+                        <option value="coen">1:30 pm</option>
+                        <option value="niley">3:00 pm</option>
+                        <option value="nooka">4:30 pm</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label id="labelmargin" for="message">Anything else you'd like to let us know?</label>
+                    <textarea id="msg" name="msg" rows="3" cols="60"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" id="button" name="button" value="Submit">
+                    <input type="reset" id="button" name="button" value="Clear">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
